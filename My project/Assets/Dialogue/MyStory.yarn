@@ -6,39 +6,99 @@ tags:
 
 
 title: TalkToGod
+color: orange
+position: -485,141
 tags:
 ---
-A : fsaldfafsaodf
-B : dfsakhdfsalh
-神像:
-第一日已至。
 
-神像:
-被承印的孩子正在恐惧中偏离归途。
+Statue: The First Day has come.
 
-神像:前往他的居室。
+Statue: The Marked Child is lost in fear, straying from the path that leads him home.
 
-神像:
-以食物平息他的身体，以经文安定他的心。
+Statue: Go to his chamber.
 
-神像:在钟声第二次响起前，完成诵读。
+Statue: Feed his body, and soothe his heart with Scripture.
 
-神像:
-不可让他哭喊，不可让他伤己，不可让他质问门后的光。
+Statue: Recite the sacred verses in full before the bell tolls a second time.
 
-神像:
-记住，执行者。
+Statue: Remember, Executor.
 
-神像:
-怜悯若使仪式迟疑，便是对神的不敬。
-
+Statue: Should mercy cause you to falter in the ritual, you shall have shown disrespect to the Divine.
 
 ===
 
 
 
-title: TalkToGod
+title: TalkToGod2
+position: -485,141
 tags:
 ---
+当然，替换后如下：
 
+The Holy Child: Don’t open the door.
+
+Bishop Lucian: Today is only the First Day’s recitation.
+
+The Holy Child: They said that about the First Day, too.They said it wouldn’t hurt.
+
+Bishop Lucian: I need you to calm down.
+
+The Holy Child: Why me?
+
+===
+
+title: food
+position: 463,7
+---
+Bishop Lucian: I brought you something to eat.
+
+The Holy Child: Don’t come any closer.
+
+Bishop Lucian: Alright. I won’t.
+
+The Holy Child: You said that before.
+
+Bishop Lucian: I know.
+
+The Holy Child: …You’re not going to make me eat it?
+
+Bishop Lucian: No. Take it when you’re ready.
+===
+
+title: knife
+position: 169,44
+---
+Bishop Lucian: Why do you have something like this on you?
+
+The Holy Child: Don’t touch me!
+
+Bishop Lucian: You cannot keep this.
+===
+
+title: Node_1788683360250
+position: 169,44
+---
+Bishop Lucian:
+
+“I saw it.”
+
+The Holy Child:
+
+“Are you going to tell them?”
+
+Bishop Lucian:
+
+“No. Give it to me. I’ll take care of it.”
+
+The Holy Child:
+
+“Will they know?”
+
+Bishop Lucian:
+
+“No.”
+
+The Holy Child:
+
+“...Then come back tomorrow.”
 ===
