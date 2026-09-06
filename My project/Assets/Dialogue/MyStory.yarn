@@ -78,27 +78,87 @@ Bishop Lucian: You cannot keep this.
 title: Node_1788683360250
 position: 169,44
 ---
-Bishop Lucian:
+Bishop Lucian: I saw it.
 
-“I saw it.”
+The Holy Child: Are you going to tell them?
 
-The Holy Child:
+Bishop Lucian: No. Give it to me. I’ll take care of it.
 
-“Are you going to tell them?”
+The Holy Child: Will they know?
 
-Bishop Lucian:
+Bishop Lucian: No.
 
-“No. Give it to me. I’ll take care of it.”
-
-The Holy Child:
-
-“Will they know?”
-
-Bishop Lucian:
-
-“No.”
-
-The Holy Child:
-
-“...Then come back tomorrow.”
+The Holy Child: ...Then come back tomorrow.
 ===
+Failure: Attacked Before Feeding
+
+The Holy Child was frightened. The Executor failed in his duty.
+
+Failure: Three Failed Recitations
+
+The scripture of the First Day was broken by incorrect verses.
+
+The Holy Child remained silent until the second bell tolled.
+
+The statue offered no further guidance.
+
+Failure: Forced Approach to the Cell
+
+The Executor crossed the boundary of safety.
+
+The Holy Child turned fear into his final defense.
+
+The record of the First Day has been sealed.
+
+After Failure
+
+Restarting the First Day.
+
+Successful Completion — Knife Undiscovered
+
+Temple Record:
+
+The First Day’s recitation is complete.
+The Holy Child has ceased resisting. The ritual may continue.
+
+The Holy Child:
+
+The Holy Child sits with his knees drawn to his chest, avoiding your gaze.
+His right hand remains pressed tightly against his side.
+
+Knife Discovered — Removed by Force
+
+Temple Record:
+
+The First Day’s recitation is complete.
+An object capable of disrupting the ritual has been removed.
+
+The Holy Child:
+
+The Holy Child sits with his back turned toward you.
+His shoulders continue to tremble long after the blade is taken away.
+
+Knife Discovered — Handled with Mercy
+
+Temple Record:
+
+The First Day’s recitation is complete.
+The Holy Child has shown no further signs of aggression.
+
+The Holy Child:
+
+The Holy Child watches you set the blade aside. After a moment of silence, he slowly lowers his guard.
+
+The Scripture of the Divine Mark
+The mark chose you before birth.
+
+The Window Beyond the Veil
+Death opens softly into sacred light.
+
+The Silent Oath
+Silent hearts never question the divine path.
+
+success
+The Holy Child stops resisting, quietly repeating the final words of the scripture.
+fail
+The Holy Child covers his ears, refusing to hear the remaining verses.
