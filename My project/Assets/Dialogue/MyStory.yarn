@@ -12,153 +12,212 @@ tags:
 ---
 
 Statue: The First Day has come.
-
 Statue: The Marked Child is lost in fear, straying from the path that leads him home.
-
 Statue: Go to his chamber.
-
 Statue: Feed his body, and soothe his heart with Scripture.
-
 Statue: Recite the sacred verses in full before the bell tolls a second time.
-
 Statue: Remember, Executor.
-
 Statue: Should mercy cause you to falter in the ritual, you shall have shown disrespect to the Divine.
 
 ===
 
 
 
-title: TalkToGod2
+title: TalkToTheHolyChild
 position: -485,141
 tags:
 ---
-当然，替换后如下：
 
-The Holy Child: Don’t open the door.
-
-Bishop Lucian: Today is only the First Day’s recitation.
-
-The Holy Child: They said that about the First Day, too.They said it wouldn’t hurt.
-
-Bishop Lucian: I need you to calm down.
-
-The Holy Child: Why me?
-
+The Holy Child: Leave me alone!
+-> Move Closer
+    ...// BE 
+    <<jump FailureAttackedBeforeFeeding>>
+-> Leave Him Alone 
+    You stopped walking.
+    Bishop Lucian: I won't hurt you.
+    The Holy Child: ....
+    Bishop Lucian: But I need you to calm down.
+    The Holy Child: ....
+    The holy child watched you warily, saying nothing.
+    Bishop Lucian: (Maybe I should look around and see if anything can help him to calm down).
+    // 支持探索桌面 和食物
 ===
 
-title: food
+title: BroughtFood
 position: 463,7
 ---
 Bishop Lucian: I brought you something to eat.
-
+///apple
 The Holy Child: Don’t come any closer.
-
 Bishop Lucian: Alright. I won’t.
-
 The Holy Child: You said that before.
-
 Bishop Lucian: I know.
-
 The Holy Child: …You’re not going to make me eat it?
-
 Bishop Lucian: No. Take it when you’re ready.
+
+
+//...
+He ate the apple.
 ===
 
-title: knife
+
+title: ReadBoook
+position: 169,44
+---
+...
+// 什么样的书， 提示玩家
+
+===
+
+title: ChooseBookHolyChild
+position: 169,44
+---
+-> BookName1 // Error
+    .... // start over
+-> BookName2 // Correct
+    ....
+-> BookName3 // Normal
+    ....
+
+
+-> Scen1
+    ...
+-> Scen2
+    ...
+-> Scen3
+    ...// Knife
+**Choose a scripture that the child can accept without fear.**
+
+**The Scripture of the Mark** — Speaks of the Mark and the fate it brings with a quiet sense of hope.
+
+**The Window Beyond the Veil** — Speaks calmly of death and what lies beyond.
+
+**The Silent Oath** — Calls for obedience and leaves no room for doubt.
+
+===
+
+
+title: knife_takeAway
 position: 169,44
 ---
 Bishop Lucian: Why do you have something like this on you?
-
+//
 The Holy Child: Don’t touch me!
 
 Bishop Lucian: You cannot keep this.
 ===
 
-title: Node_1788683360250
+
+
+
+title: Knife_Talk
 position: 169,44
 ---
 Bishop Lucian: I saw it.
-
 The Holy Child: Are you going to tell them?
-
 Bishop Lucian: No. Give it to me. I’ll take care of it.
-
 The Holy Child: Will they know?
-
 Bishop Lucian: No.
-
 The Holy Child: ...Then come back tomorrow.
 ===
-Failure: Attacked Before Feeding
 
-The Holy Child was frightened. The Executor failed in his duty.
 
-Failure: Three Failed Recitations
+title: FailureAttackedBeforeFeeding
+position: 169,44
+---
+The Holy Child was frightened. 
+//Attack
+The Executor failed in his duty.
+//start over
+===
 
+
+title: FailureThreeFailedRecitations
+position: 169,44
+---
 The scripture of the First Day was broken by incorrect verses.
-
 The Holy Child remained silent until the second bell tolled.
-
 The statue offered no further guidance.
+===
 
-Failure: Forced Approach to the Cell
 
+title: FailureForcedApproachToTheCell
+position: 169,44
+---
 The Executor crossed the boundary of safety.
-
 The Holy Child turned fear into his final defense.
-
 The record of the First Day has been sealed.
+===
 
-After Failure
 
-Restarting the First Day.
-
-Successful Completion — Knife Undiscovered
-
+title:SuccessfulCompletionKnifeUndiscovered
+position: 169,44
+---
 Temple Record:
-
 The First Day’s recitation is complete.
 The Holy Child has ceased resisting. The ritual may continue.
 
-The Holy Child:
+===
 
+
+title:TheHolyChild_NormalEnding
+position: 169,44
+---
 The Holy Child sits with his knees drawn to his chest, avoiding your gaze.
 His right hand remains pressed tightly against his side.
 
-Knife Discovered — Removed by Force
+===
 
+
+title: KnifeDiscoveredRemovedByForce
+position: 169,44
+---
 Temple Record:
 
 The First Day’s recitation is complete.
 An object capable of disrupting the ritual has been removed.
-
-The Holy Child:
-
 The Holy Child sits with his back turned toward you.
 His shoulders continue to tremble long after the blade is taken away.
 
-Knife Discovered — Handled with Mercy
+===
 
+title: KnifeDiscoveredHandledwithMercy
+position: 169,44
+---
 Temple Record:
-
 The First Day’s recitation is complete.
 The Holy Child has shown no further signs of aggression.
 
 The Holy Child:
-
 The Holy Child watches you set the blade aside. After a moment of silence, he slowly lowers his guard.
+===
 
-The Scripture of the Divine Mark
-The mark chose you before birth.
+
+
+
+title: Script
+position: 169,44
+---
+TheScriptureOftheDivineMark
+//
+The mark chose you before birth. //Best Choice
 
 The Window Beyond the Veil
 Death opens softly into sacred light.
+//
 
 The Silent Oath
 Silent hearts never question the divine path.
+//
+===
 
-success
+title: ScriptSuccess
+position: 169,44
+---
 The Holy Child stops resisting, quietly repeating the final words of the scripture.
-fail
+===
+title: ScriptFailure
+position: 169,44
+---
 The Holy Child covers his ears, refusing to hear the remaining verses.
+===
